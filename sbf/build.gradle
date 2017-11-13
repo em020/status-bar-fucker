@@ -13,7 +13,7 @@ ext {
     siteUrl = 'https://site-url.foo'
     gitUrl = 'https://git-url.foo'
 
-    libraryVersion = '0.0.3'
+    libraryVersion = '0.0.4'
 
     developerId = 'em020'
     developerName = 'Yimin S'
@@ -22,6 +22,21 @@ ext {
     licenseName = 'The Apache Software License, Version 2.0'
     licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
     allLicenses = ["Apache-2.0"]
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+    javadoc {
+        failOnError false
+        options{
+            encoding "UTF-8"
+            charSet 'UTF-8'
+//            author true
+//            version true
+//            links "http://docs.oracle.com/javase/7/docs/api"
+//            title "fragment-view-pager docs"
+        }
+    }
 }
 
 android {

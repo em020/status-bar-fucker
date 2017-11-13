@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
         StatusBarFucker fucker = new StatusBarFucker();
         fucker.setWindowExtend(1);
         fucker.setStatusBarColor(Color.parseColor("#33666666"));
+        fucker.setUseDarkNotiIcon(true);
         fucker.fuck(getWindow());
 
 

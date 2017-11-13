@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/StatusBarFucker.iml" filepath="$PROJECT_DIR$/StatusBarFucker.iml" />
+      <module fileurl="file://C:\Users\yzsh-sym\git\status-bar-fucker\StatusBarFucker.iml" filepath="C:\Users\yzsh-sym\git\status-bar-fucker\StatusBarFucker.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\yzsh-sym\git\status-bar-fucker\app\app.iml" filepath="C:\Users\yzsh-sym\git\status-bar-fucker\app\app.iml" />
       <module fileurl="file://$PROJECT_DIR$/sbf/sbf.iml" filepath="$PROJECT_DIR$/sbf/sbf.iml" />
+      <module fileurl="file://C:\Users\yzsh-sym\git\status-bar-fucker\sbf\sbf.iml" filepath="C:\Users\yzsh-sym\git\status-bar-fucker\sbf\sbf.iml" />
+      <module fileurl="file://$PROJECT_DIR$/status-bar-fucker.iml" filepath="$PROJECT_DIR$/status-bar-fucker.iml" />
     </modules>
   </component>
 </project>
