@@ -1,5 +1,6 @@
 package yimin.sun.statusbarfucker;
 
+import android.app.Activity;
 import android.graphics.Color;
 import android.os.Build;
 import android.support.annotation.RequiresApi;
@@ -34,6 +35,15 @@ public class StatusBarFucker {
 
     private Integer navBarColor = null;
 
+
+    public static boolean isContentExtendedUp(Activity activity) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+            int sysUiVisibility = activity.getWindow().getDecorView().getSystemUiVisibility();
+            return (sysUiVisibility & View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN) == View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN;
+        } else {
+            return false;
+        }
+    }
 
     public void setWindowExtend(int windowExtend) {
         this.windowExtend = windowExtend;
@@ -89,8 +99,8 @@ public class StatusBarFucker {
                     systemUiVisibility &= ~View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION;
                     break;
                 case 1:
-                    systemUiVisibility &= ~View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION;
                     systemUiVisibility |= View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN;
+                    systemUiVisibility &= ~View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION;
                     break;
                 case 2:
                     systemUiVisibility |= View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN;
