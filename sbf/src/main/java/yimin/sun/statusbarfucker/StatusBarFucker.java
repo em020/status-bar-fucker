@@ -20,6 +20,8 @@ import java.util.regex.Pattern;
 
 public class StatusBarFucker {
 
+    public static boolean ENABLE = true;
+
     /**0-none; 1-up; 2-both*/
     private int windowExtend = -1;
 
@@ -75,7 +77,7 @@ public class StatusBarFucker {
 
     public void fuck(Window window) {
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+        if (ENABLE && Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             fuckImpl(window);
         }
     }
